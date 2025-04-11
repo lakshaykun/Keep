@@ -6,6 +6,7 @@
     <title>Keep</title>
     <link rel="stylesheet" href="/stylesheets/style.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="icon" href="/images/logo.png" type="image/png" />
 </head>
 <body class="text-white">
     <header class="sticky top-0 left-0 right-0 z-50 shadow-md w-full justify-center flex">
@@ -72,10 +73,19 @@
             </div>
         </div>
     </main>
-
-    <footer>
-
-    </footer>
+    <div id="cardModal">
+        <div id="contentModal" class="border-1 border-gray-500 rounded-md p-4">
+            <div id="contentTitle" class="text-2xl pb-2">
+                <span>Card Title</span>
+            </div>
+            <div id="contentPara">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam asperiores, reprehenderit eius ex unde perspiciatis? Hic temporibus, optio neque, sit voluptate laboriosam accusamus maxime pariatur illum repellat fugiat ex. Nesciunt?</p>
+            </div>
+            <div id="contentEdit" class="pt-3">
+                Edit Content
+            </div>
+        </div>
+    </div>
     <script src="javascripts/script.js"></script>
 </body>
 </html>

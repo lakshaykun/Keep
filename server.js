@@ -1,6 +1,6 @@
 const express = require('express');
 const path = require('path');
-
+const port = 4000;
 const app = express();
 
 app.set("view engine", "ejs");
@@ -12,5 +12,9 @@ app.get('/', (req, res) =>{
     res.render('index');
 })
 
-app.listen(3000);
-console.log("http://localhost:3000/")
+app.get('/welcome', (req, res) => {
+    res.render('welcome')
+})
+
+app.listen(port);
+console.log(`http://localhost:${port}/`)

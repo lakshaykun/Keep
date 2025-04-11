@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keep | Welcome</title>
+    <link rel="stylesheet" href="/stylesheets/welcome.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="icon" href="/images/g.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body class="">
+    <header class="sticky top-0 left-0 right-0 z-50 shadow-md w-full justify-center flex">
+        <nav class="flex text-lg gap-10 h-12 items-center justify-between w-95/100">
+            <div id="leftNav" class="flex gap-2 items-center">
+                <img src="/images/google.png" class="h-8" alt="Google Keep">
+                <span class="text-gray-600">Keep</span>
+            </div>
+            <div id="rightNav" class="flex justify-center items-center gap-5 right">
+                <a class="border-1 border-blue-500 p-2 text-blue-500 rounded-md w-20 text-center text-sm sign-up">Sign up</a>
+                <a class="bg-blue-500 p-2 text-white rounded-md w-20 text-center text-sm sign-in">Sign in</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="grid items-center justify-center">
+        <div class="content">
+            <div class="content-text">
+                <div class="content-brand">
+                    <img src="images/logo.png" alt="">
+                    <span class="text-gray-600">Google Keep</span>
+                </div>
+                <h1>Digital notes, accessible from anywhere</h1>
+                <p>Create and share notes, lists, photos, drawings and audio to save your thoughts with Keep.</p>
+                <div class="w-40 text-sm flex gap-3">
+                    <a class="bg-blue-500 p-2 text-white rounded-md sign-in">Sign in</a>
+                    <a class="border-1 border-blue-500 p-2 text-blue-500 rounded-md" href="/">Keep</a>
+                </div>
+            </div>
+            <img src="images/welcome1.webp" alt="">
+        </div>
+        <div class="content">
+            <img src="images/welcome2.webp" alt="">
+            <div class="content-text">
+                <h2>Capture what's important and get more done</h1>
+                <p>Shopping lists, to-dos or brainstorming ideas? Keep will help you stay organised so that you can focus on the moment, knowing that you won't forget a thing.</p>
+            </div>
+        </div>
+    </main>
+    
+    <div class="formModalbg" id="signinModal">
+        <div class="border-1 border-gray-500 rounded-md p-5 formModal">
+            <div class="text-2xl pb-2 formTitle">
+                <span>Sign in</span>
+            </div>
+            <form action="/signin">
+                <input type="email" placeholder="email" name="email">
+                <input type="password" placeholder="password" name="email">
+                <button class="bg-blue-500 p-2 text-white rounded-md" class="sign-in">Sign in</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="formModalbg" id="signupModal">
+        <div class="border-1 border-gray-500 rounded-md p-5 formModal">
+            <div class="text-2xl pb-2 formTitle">
+                <span>Sign up</span>
+            </div>
+            <form action="/signup">
+                <input type="text" placeholder="name" name="name">
+                <input type="email" placeholder="email" name="email">
+                <input type="number" placeholder="number" name="number">
+                <input type="password" placeholder="password" name="email">
+                <button class="bg-blue-500 p-2 text-white rounded-md" class="sign-in">Sign in</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="javascripts/welcome.js"></script>
+</body>
+</html>
